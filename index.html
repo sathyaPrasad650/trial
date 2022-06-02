@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--  -->
+    <style>
+      .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 500px;
+        width: 600px;
+      }
+      .size{
+          width: 310px;
+      }
+    </style>
+    <!--  -->
+  </head>
+  <body>
+    <input type="text" id="city" class="size"/>
+    <br>
+    <br>
+    <button onclick="getData1()" class="size">Search Weather</button>
+    <br>
+    <br>
+    <button onclick="getLocationWeather()" class="size">Current Weather Location</button>
+    <div id="container" ></div>
+
+    <!-- Embedding the map image from -> https://embedgooglemap.net/ -->
+    <!-- And removed the unwanted code -->
+    <!-- src for iframe will be added from JS -->
+      <div class="gmap_canvas">
+        <iframe
+          width="600"
+          height="500"
+          id="gmap_canvas"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+        ></iframe>
+      </div>
+    </div>
+    
+    
+
+  </body>
+</html>
+
+<script src="./index.js"></script>
